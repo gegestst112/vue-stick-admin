@@ -1,0 +1,11 @@
+{
+  "common":{
+    "userlogin":"用户登录",
+    "userName":"用户名",
+    "password":"密码",
+    "login":"登录",
+    "register":"用户注册",
+    "rePassword":"找回密码",
+    "thirdTips":"去官方申请开通"
+  }
+}

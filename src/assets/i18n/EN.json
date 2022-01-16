@@ -1,0 +1,11 @@
+{
+  "common":{
+    "userlogin":"User Login",
+    "userName":"User Name",
+    "password":"Password",
+    "login":"Login",
+    "register":"Register",
+    "rePassword":"Retrieve Password",
+    "thirdTips":"Go to the official application to open"
+  }
+}

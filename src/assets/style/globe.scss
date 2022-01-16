@@ -1,0 +1,19 @@
+$linkColor:#2c7cc7;
+$mainColor:#2c3e50;
+$subColor:#999999;
+$pageBg:#f0f8fe;
+$lightColor:#ffffff;
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td ,
+h1, h2, h3, h4, h4, h5{
+  box-sizing: border-box;margin:0;padding:0;
+}
+html,body{
+  height:100%;
+}
+
+ul,ol,li{list-style:none;}
+
+a,a:hover,a:active,a:visited{
+  color:$linkColor;text-decoration:none;
+}

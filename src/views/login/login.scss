@@ -1,0 +1,48 @@
+.login_wrap{
+  height:100%;background:$pageBg;display:flex;justify-content:center;align-items:center;
+  .login_container{
+    width:500px;border-radius:18px;
+    box-shadow:2px 2px 5px 1px #7e858f;
+    background:$mainColor;
+    color:$lightColor;
+  }
+  h2{
+    text-align:center;color:$lightColor;line-height:80px;font-size:24px;
+  }
+  .third{
+    display:flex;justify-content:center;margin:-30px 30px 20px;
+    border-top:1px solid #7e858f;padding-top:20px;position:relative;
+    a{
+      margin:0 20px;width:40px;height:40px;
+    }
+    img{
+      object-fit: contain;width:100%;
+    }
+  }
+  .el-form{
+    padding:0px 60px 40px 30px;
+  }
+  .el-form-item__label{
+    color:$lightColor;
+  }
+  .el-form-item{
+    padding-top: 30px;
+  }
+  .reg_container{
+    .el-form{
+      padding-bottom:10px;
+    }
+    .el-form-item{
+      padding-top: 10px;
+    }
+  }
+
+  .ret_container{
+    .el-step__title.is-wait,.el-step__title.is-process{
+      color:#ccc;font-weight:normal;
+    }
+    .el-step__head.is-wait,.el-step__head.is-process{
+      border-color:#ccc;color:#ccc;
+    }
+  }
+}

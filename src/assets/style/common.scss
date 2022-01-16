@@ -1,0 +1,95 @@
+@import url("./normalize.css");
+
+.app_main {
+  font-family: Avenir, Helvetica, Arial, sans-serif,"Microsoft YaHei","宋体";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $mainColor;height: 100%;
+}
+
+.layout_wrap{
+  min-height:100%;display:flex;align-items: stretch;
+}
+
+//侧栏导航
+.side_bar{
+  background:$mainColor;color:$lightColor;display:flex;flex-direction:column;width:220px;
+  transition:width .15s ease-in .25s;overflow:hidden;
+  .side_top{
+    text-align:center;height:60px;line-height:60px;border-bottom:1px solid $subColor;
+    img{width:30px;height:30px;vertical-align: middle;}
+    span{display:inline-block;vertical-align: middle;padding-left:10px;}
+  }
+  .side_main{
+    height:auto;flex-grow:1;
+  }
+  .side_nav{
+    border:none;
+  }
+  .side_bottom{
+    height:40px;line-height:40px;text-align:center;border-top:1px solid $subColor;
+  }
+}
+.side_collapse{
+  width:64px;
+}
+
+.layout_main{
+  flex-grow:1;background:$pageBg;width:calc( 100% - 220px );
+}
+
+//面包屑
+.bread_crumbs{
+  background:#fff;border-bottom:1px solid #e7e7e7;display:flex;height:38px;align-items:center;
+  .menu_turn{margin:0 20px;cursor:pointer;font-weight:bold;}
+  .user_set{flex-grow:1;text-align:right;padding:0 20px;}
+}
+
+//标签列表
+.tag_list{
+  padding:0px 10px;background:#fff;box-shadow: 0 4px 3px 0px #ddd;
+  .el-scrollbar__view{
+    white-space: nowrap;padding:5px 0;
+  }
+  .el-tag{
+    margin:0 2px;cursor:default;transition: .5s;
+  }
+}
+
+.layout_container{
+  height:calc( 100% - 34px - 38px );padding:28px;
+}
+
+.main_container{
+  height:100%;padding:20px;
+}
+
+.table_container{
+  min-height:100%;height:auto;background:#fff;
+}
+
+//遮罩背景
+.mask_layer{
+  position:fixed;z-index:9;top:0;left:0;bottom:0;right:0;background:#00000031;
+  display: flex;align-items: center;justify-content: center;
+}
+
+// 渐入过渡效果
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .25s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+// 移动动画
+.move-enter-active, .move-leave-active {
+  transition: all .5s;
+}
+.move-enter-from, .move-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.move-leave-active {
+  position: absolute;
+}
